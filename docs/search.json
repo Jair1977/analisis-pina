@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Análisis estadístico del ancho del fruto de piña",
+    "section": "",
+    "text": "Evaluar si los siete tratamientos de boro y potasio producen diferencias en el ancho del fruto (cm) de piña. Se emplea un diseño de bloques completos al azar (DBCA): siete tratamientos, cuatro bloques y 28 unidades experimentales (parcelas). Cada parcela tiene cuatro mediciones, pero la base fb ya incluye el promedio de las cuatro en la columna ancho_cm. El ANOVA se realiza con ese promedio y no con las cuatro mediciones como repeticiones independientes."
+  },
+  {
+    "objectID": "index.html#comprobación-de-supuestos",
+    "href": "index.html#comprobación-de-supuestos",
+    "title": "Análisis estadístico del ancho del fruto de piña",
+    "section": "6.1 Comprobación de supuestos",
+    "text": "6.1 Comprobación de supuestos\n\n# Normalidad de residuos: p &gt; 0.05 no aporta evidencia contra normalidad.\nshapiro.test(residuals(md))\n\n\n    Shapiro-Wilk normality test\n\ndata:  residuals(md)\nW = 0.989, p-value = 0.9884\n\n# Homogeneidad de varianzas por tratamiento.\nbartlett.test(ancho_cm ~ tratamiento, data = fb)\n\n\n    Bartlett test of homogeneity of variances\n\ndata:  ancho_cm by tratamiento\nBartlett's K-squared = 13.281, df = 6, p-value = 0.03879\n\n# Gráficas de diagnóstico del modelo.\nplot(md, which = 1)\n\n\n\n\n\n\n\nplot(md, which = 2)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
